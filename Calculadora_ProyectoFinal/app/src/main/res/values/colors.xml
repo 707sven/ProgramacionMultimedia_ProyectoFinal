@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="negro">#FF000000</color>
+    <color name="blanco">#FFFFFFFF</color>
+    <color name="grisClaro">#F5F5F5</color>
+    <color name="azul">#3498DB</color>
+    <color name="verde">#2ECC71</color>
+    <color name="grisOscuro">#2C3E50</color>
+    <color name="rojo">#E74C3C</color>
+    <color name="amarillo">#F39C12</color>
+    <color name="morado">#8E44AD</color>
+    <color name="grisClaro_Detalles">#CCCCCC</color>
+    <color name="white_bgColor">#CFC8C4</color>
+    <color name="light_salmon">#DAA288</color>
+    <color name="brown">#68524C</color>
+</resources>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_bgColor"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Encabezado -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="15dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/negro"
+        android:textSize="32sp" />
+
+    <!-- Campos de entrada -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawablePadding="48dp"
+            android:hint="@string/hint"
+            android:maxLength="10"
+            android:minHeight="48dp"
+            android:inputType="numberDecimal"/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@android:drawable/editbox_background"
+            android:drawablePadding="48dp"
+            android:hint="@string/hint"
+            android:maxLength="10"
+            android:minHeight="48dp"
+            android:inputType="numberDecimal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- RadioGroup para operadores -->
+            <RadioGroup
+                android:id="@+id/radioGroupOperadores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSuma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sumar"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/light_salmon"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonResta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/restar"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/light_salmon"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonMultiplicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/multiplicar"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/light_salmon"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonDivision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dividir"
+                    android:textColor="@color/negro"
+                    android:backgroundTint="@color/light_salmon"/>
+            </RadioGroup>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textViewResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="@string/resultado"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Grupo de Botones -->
+    <GridLayout
+        android:id="@+id/gridLayoutBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_gravity="center"
+        android:padding="10dp">
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btnCalcular"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/light_salmon"
+            android:onClick="calcular"
+            android:text="@string/calcular"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnBorrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/light_salmon"
+            android:onClick="borrar"
+            android:text="@string/borrar"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/light_salmon"
+            android:onClick="guardar"
+            android:text="@string/guardar"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/light_salmon"
+            android:onClick="mostrar"
+            android:text="@string/mostrar"
+            android:textColor="@color/brown"
+            android:textSize="20sp"
+            android:padding="10dp" />
+    </GridLayout>
+
+</LinearLayout>
